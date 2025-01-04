@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bulb</h1>
+            <button class="btn btn-success"  onclick="on()">On BULB</button>
+            <img src="./pic_bulboff.gif" alt="" id="img">
+            <button class="btn btn-danger" onclick="off()">OFF BULB</button>
+
+            <script>
+                function on(){
+                    document.getElementById("img").setAttribute("src","pic_bulbon.gif")
+                }
+                function off(){
+                    document.getElementById("img").setAttribute("src","pic_bulboff.gif")
+                }
+            </script>
+</body>
+</html>
